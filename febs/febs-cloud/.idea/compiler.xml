@@ -6,9 +6,9 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="febs-auth" />
-        <module name="febs-common" />
         <module name="febs-register" />
+        <module name="febs-common" />
+        <module name="febs-auth" />
       </profile>
     </annotationProcessing>
   </component>

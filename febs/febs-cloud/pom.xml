@@ -12,6 +12,7 @@
             <module>../febs-common</module>
             <module>../febs-register</module>
             <module>../febs-auth</module>
+            <module>../febs-gateway</module>
         </modules>
         <name>FEBS-Cloud</name>
         <description>FEBS-Cloud：Spring Cloud，Spring Security OAuth2 微服务权限管理系统</description>

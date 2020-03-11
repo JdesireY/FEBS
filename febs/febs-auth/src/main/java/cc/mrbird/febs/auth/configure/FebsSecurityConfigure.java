@@ -1,5 +1,6 @@
 package cc.mrbird.febs.auth.configure;
 
+import cc.mrbird.febs.auth.service.FebsUserDetailService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.core.annotation.Order;
