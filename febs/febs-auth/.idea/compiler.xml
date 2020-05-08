@@ -6,10 +6,9 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="febs-gateway" />
-        <module name="febs-register" />
-        <module name="febs-common" />
         <module name="febs-auth" />
+        <module name="febs-common" />
+        <module name="febs-register" />
       </profile>
     </annotationProcessing>
   </component>
@@ -17,7 +16,6 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="febs-auth" options="-parameters" />
       <module name="febs-common" options="-parameters" />
-      <module name="febs-gateway" options="-parameters" />
       <module name="febs-register" options="-parameters" />
     </option>
   </component>
