@@ -18,5 +18,6 @@ eureka:
     register-with-eureka: false #表示是否将服务注册到eureka服务端，因为我们这里是单节点的eureka服务端，所以这里制定false
     fetch-registry: false #表示是否从Eureka服务端获取服务信息，因为这里是单节点的Eureka服务端，并不需要从别的服务端同步服务信息，所以这里设置为false
     instance-info-replication-interval-seconds: 30 # 微服务更新实例的变化到Eureka服务端的间隔时间，单位为秒，这里指定为30S（这就是微服务启动后，要过一会才能注册到Eureka服务端的原因）
-    serviceUrl.defaultZone: http://${spring.security.user.name}:${spring.security.user.password}@${eureka.instance.hostname}:${server.port}${server.servlet.context-path}/eureka/
+    serviceUrl:
+      defaultZone: http://${spring.security.user.name}:${spring.security.user.password}@${eureka.instance.hostname}:${server.port}${server.servlet.context-path}/eureka/
       #制定Eureka服务端的地址
