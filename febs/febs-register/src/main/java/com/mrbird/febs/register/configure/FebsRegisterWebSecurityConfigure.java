@@ -8,7 +8,9 @@ public class FebsRegisterWebSecurityConfigure extends WebSecurityConfigurerAdapt
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         //该配置类用于开启Eureka服务端端点保护。
+       // http.csrf().ignoringAntMatchers("/eureka/**");
         http.csrf().ignoringAntMatchers("/eureka/**");
+       // http.csrf().disable();
         super.configure(http);
     }
 }

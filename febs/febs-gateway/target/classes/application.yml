@@ -1,9 +1,9 @@
-sever:
-  port:8301
+server:
+ port: 8301
 
 spring:
   application:
-    name:FEBS-Gateway
+    name: FEBS-Gateway
 
 eureka:
   instance:
@@ -13,8 +13,7 @@ eureka:
     fetch-registry: true
     instance-info-replication-interval-seconds: 30
     registry-fetch-interval-seconds: 3
-    serviceUrl:
-      defaultZone: http://febs:123456@localhost:8001/register/eureka/
+    serviceUrl.defaultZone: http://febs:123456@localhost:8001/register/eureka/
 
 zuul:
   routes:
@@ -35,4 +34,5 @@ zuul:
       #这样一来如果创建时间速度较慢，同时设置的超时时间又比较短的话，第一次请求很容易出现超时的情况。设置为true的时候表示开启Ribbon
       #的饥饿加载模式，即在应用启动的时候就去获取相应的Client备用。
 ribbon:
-  ReadTimeout: 3000 #设置请求超时时间，单位为毫秒
+  ReadTimeout: 3000
+  #设置请求超时时间，单位为毫秒
